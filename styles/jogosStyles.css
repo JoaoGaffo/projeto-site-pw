@@ -1,0 +1,132 @@
+.jogos-topo {
+  background-color: var(--verde);
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.jogos-topo h1 {
+  font-size: 2.6rem;
+  color: var(--branco);
+}
+
+.jogos-topo p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 12px;
+}
+
+.jogos-filtros {
+  background-color: var(--cinza-claro);
+  padding: 24px 0;
+  border-bottom: 3px solid var(--amarelo);
+}
+
+.jogos-filtros .container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 2px solid var(--azul);
+  background: transparent;
+  color: var(--azul);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtro-btn.ativo,
+.filtro-btn:hover {
+  background-color: var(--azul);
+  color: var(--amarelo);
+}
+
+.jogos-lista {
+  padding: var(--espacamento-secao) 0;
+}
+
+.jogos-lista h2 {
+  font-size: 1.4rem;
+  color: var(--azul);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--amarelo);
+  display: inline-block;
+}
+
+.jogo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-radius: 8px;
+  background-color: var(--cinza-claro);
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s;
+}
+
+.jogo-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.jogo-times {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.time-nome {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.time-nome.direita {
+  text-align: right;
+}
+
+.placar {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--azul);
+  background-color: var(--branco);
+  padding: 6px 20px;
+  border-radius: 6px;
+  min-width: 80px;
+  text-align: center;
+  border: 2px solid var(--azul);
+}
+
+.jogo-info {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+.jogo-info span {
+  display: block;
+}
+
+.jogo-info .jogo-data {
+  font-weight: 500;
+  color: var(--preto);
+}
+
+.jogo-item.pendente .placar {
+  color: #aaa;
+  border-color: #ccc;
+  font-size: 1rem;
+}
+
+.jogos-grupo {
+  margin-bottom: 48px;
+}

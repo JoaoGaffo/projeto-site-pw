@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyle.css" />
+    <title>Jogos - Copa 2026</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="jogos.html">JOGOS</a>
+        <a href="paises.html">PAÍSES</a>
+        <a href="contato.html">CONTATO</a>
+      </nav>
+    </header>
+
+    <section class="jogos-topo">
+      <div class="container">
+        <h1>Calendário de Jogos</h1>
+        <p>Acompanhe todos os jogos da Copa do Mundo 2026</p>
+      </div>
+    </section>
+
+    <div class="faixa-amarela"></div>
+
+    <section class="jogos-filtros">
+      <div class="container">
+        <button class="filtro-btn ativo" onclick="filtrarFase('todos', this)">
+          TODOS
+        </button>
+        <button class="filtro-btn" onclick="filtrarFase('grupos', this)">
+          FASE DE GRUPOS
+        </button>
+        <button class="filtro-btn" onclick="filtrarFase('oitavas', this)">
+          OITAVAS
+        </button>
+        <button class="filtro-btn" onclick="filtrarFase('quartas', this)">
+          QUARTAS
+        </button>
+        <button class="filtro-btn" onclick="filtrarFase('semi', this)">
+          SEMIFINAL
+        </button>
+        <button class="filtro-btn" onclick="filtrarFase('final', this)">
+          FINAL
+        </button>
+      </div>
+    </section>
+
+    <section class="jogos-lista">
+      <div class="container">
+        <div class="jogos-grupo" data-fase="grupos">
+          <h2>Fase de Grupos</h2>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">BRASIL</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">MÉXICO</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">15/06/2026</span>
+            </div>
+          </div>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">ARGENTINA</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">ALEMANHA</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">16/06/2026</span>
+            </div>
+          </div>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">PORTUGAL</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">ESPANHA</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">17/06/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="jogos-grupo" data-fase="oitavas">
+          <h2>Oitavas de Final</h2>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">A DEFINIR</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">A DEFINIR</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">01/07/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="jogos-grupo" data-fase="quartas">
+          <h2>Quartas de Final</h2>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">A DEFINIR</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">A DEFINIR</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">08/07/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="jogos-grupo" data-fase="semi">
+          <h2>Semifinal</h2>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">A DEFINIR</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">A DEFINIR</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">14/07/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="jogos-grupo" data-fase="final">
+          <h2>Final</h2>
+
+          <div class="jogo-item pendente">
+            <div class="jogo-times">
+              <span class="time-nome">A DEFINIR</span>
+              <div class="placar">X</div>
+              <span class="time-nome direita">A DEFINIR</span>
+            </div>
+            <div class="jogo-info">
+              <span class="jogo-data">19/07/2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 24px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      "
+    >
+      PROJETO COPA 2026 &mdash; ETEC ALBERT EINSTEIN
+    </footer>
+
+    <script src="./scripts/jogos.js"></script>
+  </body>
+</html>
