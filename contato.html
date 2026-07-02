@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyle.css" />
+    <title>Contato - Copa 2026</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="jogos.html">JOGOS</a>
+        <a href="paises.html">PAÍSES</a>
+        <a href="contato.html">CONTATO</a>
+      </nav>
+    </header>
+
+    <section class="contato-topo">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>Dúvidas, sugestões ou contribuições? Fale conosco!</p>
+      </div>
+    </section>
+
+    <div class="faixa-amarela"></div>
+
+    <section class="contato-conteudo">
+      <div class="container">
+        <div class="contato-info">
+          <h2>Fale com a Gente</h2>
+          <p>
+            Este é um projeto estudantil desenvolvido na ETEC Albert Einstein.
+            Se você tiver sugestões de melhoria, encontrou alguma informação
+            incorreta ou quer contribuir com o projeto, use o formulário ao
+            lado.
+          </p>
+        </div>
+
+        <div class="contato-form">
+          <div class="campo-grupo">
+            <label for="nome">Seu Nome</label>
+            <input type="text" id="nome" placeholder="Ex: João Silva" />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto">
+              <option value="">Selecione um assunto...</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="erro">Informação incorreta</option>
+              <option value="contribuicao">Quero contribuir</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+          </div>
+
+          <button class="btn btn-amarelo" onclick="enviarContato()">
+            ENVIAR MENSAGEM
+          </button>
+
+          <div class="mensagem-enviada" id="feedbackEnvio">
+            ✓ Mensagem enviada com sucesso!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 24px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      "
+    >
+      PROJETO COPA 2026 &mdash; ETEC ALBERT EINSTEIN
+    </footer>
+
+    <script src="./scripts/contato.js"></script>
+  </body>
+</html>

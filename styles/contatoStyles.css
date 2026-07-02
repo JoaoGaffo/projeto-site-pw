@@ -1,0 +1,106 @@
+.contato-topo {
+  background: linear-gradient(135deg, var(--verde), var(--azul));
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.contato-topo h1 {
+  font-size: 2.6rem;
+  color: var(--amarelo);
+}
+
+.contato-topo p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 12px;
+}
+
+.contato-conteudo {
+  padding: var(--espacamento-secao) 0;
+}
+
+.contato-conteudo .container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contato-info {
+  flex: 1;
+}
+
+.contato-info h2 {
+  font-size: 1.8rem;
+  color: var(--azul);
+  margin-bottom: 16px;
+}
+
+.contato-info p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555;
+}
+
+.contato-form {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-grupo label {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--azul);
+}
+
+.campo-grupo input,
+.campo-grupo textarea,
+.campo-grupo select {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--preto);
+  background-color: var(--branco);
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus,
+.campo-grupo select:focus {
+  border-color: var(--verde);
+}
+
+.campo-grupo textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contato-form .btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.mensagem-enviada {
+  display: none;
+  background-color: var(--verde);
+  color: var(--branco);
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.mensagem-enviada.visivel {
+  display: block;
+}

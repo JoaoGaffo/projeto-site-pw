@@ -1,0 +1,135 @@
+.paises-topo {
+  background-color: var(--azul);
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.paises-topo h1 {
+  font-size: 2.6rem;
+  color: var(--amarelo);
+}
+
+.paises-topo p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 12px;
+  font-size: 1rem;
+}
+
+.pais-secao {
+  padding: var(--espacamento-secao) 0;
+}
+
+.pais-secao .container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.pais-secao.invertido .container {
+  flex-direction: row-reverse;
+}
+
+.pais-imagem {
+  flex: 1;
+  min-height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pais-imagem img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.pais-texto {
+  flex: 1;
+}
+
+.pais-texto .pais-etiqueta {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
+
+.pais-texto h2 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.pais-texto p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+.pais-texto .pais-cidades {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cidade-tag {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1.5px solid currentColor;
+  text-transform: uppercase;
+}
+
+.secao-eua {
+  background-color: #3c3b6e;
+  color: var(--branco);
+}
+
+.secao-eua h2 {
+  color: var(--branco);
+}
+.secao-eua .pais-imagem {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.secao-eua .cidade-tag {
+  color: #b22234;
+  border-color: #b22234;
+  background-color: rgba(178, 34, 52, 0.1);
+}
+
+.secao-mexico {
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.secao-mexico h2 {
+  color: #006847;
+}
+.secao-mexico .pais-imagem {
+  background-color: #e8f5e9;
+}
+.secao-mexico .cidade-tag {
+  color: #006847;
+  border-color: #006847;
+}
+
+.secao-canada {
+  background-color: #f7f7f7;
+  color: var(--preto);
+}
+
+.secao-canada h2 {
+  color: #cc0001;
+}
+.secao-canada .pais-imagem {
+  background-color: #fce4e4;
+}
+.secao-canada .cidade-tag {
+  color: #cc0001;
+  border-color: #cc0001;
+}
