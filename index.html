@@ -1,12 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/globalStyle.css">
-    <title>Projeto Copa</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyle.css" />
+    <title>Projeto Copa 2026</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="jogos.html">JOGOS</a>
+        <a href="paises.html">PAÍSES</a>
+        <a href="contato.html">CONTATO</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-slides" id="heroSlides">
+        <div class="hero-slide">
+          <img
+            src="./assets/images/copa_do_mundo_2026.png"
+            alt="Copa do Mundo 2026"
+          />
+          <div class="hero-legenda">
+            <a href="paises.html" class="btn btn-amarelo">SAIBA MAIS</a>
+          </div>
+        </div>
+
+        <div class="hero-slide">
+          <img src="./assets/images/estadio.png" alt="Estádios da Copa 2026" />
+          <div class="hero-legenda">
+            <a href="jogos.html" class="btn btn-amarelo">VER JOGOS</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="hero-btn-anterior" onclick="moverSlide(-1)">
+        &#8592;
+      </button>
+      <button class="hero-btn-proximo" onclick="moverSlide(1)">&#8594;</button>
+    </section>
+
+    <div class="faixa-amarela"></div>
+
+    <section class="sobre-a-copa">
+      <div class="container">
+        <h2>Sobre a Copa</h2>
+        <p>
+          A Copa do Mundo FIFA 2026 será o maior torneio de futebol da história,
+          com 48 seleções disputando o título pelo mundo pela primeira vez. Os
+          jogos acontecerão nos Estados Unidos, México e Canadá, três países que
+          juntos receberão o mundo em 16 cidades-sede.
+        </p>
+
+        <div class="sobre-numeros">
+          <div class="numero-destaque">
+            <span>48</span>
+            <p>seleções</p>
+          </div>
+          <div class="numero-destaque">
+            <span>16</span>
+            <p>cidades</p>
+          </div>
+          <div class="numero-destaque">
+            <span>3</span>
+            <p>países-sede</p>
+          </div>
+          <div class="numero-destaque">
+            <span>104</span>
+            <p>jogos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pais-secao secao-eua">
+      <div class="container">
+        <div class="pais-imagem">
+          <img
+            src="./assets/images/estadio_eua.png"
+            alt="Estádio nos Estados Unidos"
+          />
+        </div>
+        <div class="pais-texto">
+          <p class="pais-etiqueta">País sede</p>
+          <h2>Estados Unidos</h2>
+          <p>
+            Principal sede da Copa 2026, os EUA receberão a maior parte dos
+            jogos, incluindo a grande final. São 11 cidades espalhadas pelo
+            país.
+          </p>
+          <div class="pais-cidades">
+            <span class="cidade-tag">Nova York</span>
+            <span class="cidade-tag">Los Angeles</span>
+            <span class="cidade-tag">Miami</span>
+            <span class="cidade-tag">Dallas</span>
+          </div>
+          <br />
+          <a href="paises.html#eua" class="btn btn-outline">VER MAIS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pais-secao invertido secao-mexico">
+      <div class="container">
+        <div class="pais-imagem">
+          <img
+            src="./assets/images/estadio_mexico.png"
+            alt="Estádio no México"
+          />
+        </div>
+        <div class="pais-texto">
+          <p class="pais-etiqueta">País sede</p>
+          <h2>México</h2>
+          <p>
+            O México se torna o primeiro país a sediar três Copas do Mundo.
+            Cidade do México, Guadalajara e Monterrey receberão os jogos.
+          </p>
+          <div class="pais-cidades">
+            <span class="cidade-tag">Cidade do México</span>
+            <span class="cidade-tag">Guadalajara</span>
+            <span class="cidade-tag">Monterrey</span>
+          </div>
+          <br />
+          <a href="paises.html#mexico" class="btn btn-amarelo">VER MAIS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pais-secao secao-canada">
+      <div class="container">
+        <div class="pais-imagem">
+          <img
+            src="./assets/images/estadio_canada.png"
+            alt="Estádio no Canadá"
+          />
+        </div>
+        <div class="pais-texto">
+          <p class="pais-etiqueta">País sede</p>
+          <h2>Canadá</h2>
+          <p>
+            Estreando como sede de Copa, o Canadá receberá jogos em Vancouver,
+            Toronto e a capital Ottawa.
+          </p>
+          <div class="pais-cidades">
+            <span class="cidade-tag">Toronto</span>
+            <span class="cidade-tag">Vancouver</span>
+            <span class="cidade-tag">Ottawa</span>
+          </div>
+          <br />
+          <a href="paises.html#canada" class="btn btn-amarelo">VER MAIS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="proximos-jogos" id="jogos-home">
+      <div class="container">
+        <h2>Próximos Jogos</h2>
+
+        <div class="lista-jogos">
+          <div class="jogo-card">
+            <span>BRASIL</span>
+            <span class="versus">X</span>
+            <span>ARGENTINA</span>
+          </div>
+          <div class="jogo-card">
+            <span>ALEMANHA</span>
+            <span class="versus">X</span>
+            <span>ESPANHA</span>
+          </div>
+          <div class="jogo-card">
+            <span>FRANÇA</span>
+            <span class="versus">X</span>
+            <span>PORTUGAL</span>
+          </div>
+        </div>
+
+        <a href="jogos.html" class="btn btn-outline">VER CALENDÁRIO COMPLETO</a>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 24px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      "
+    >
+      PROJETO COPA 2026 &mdash; ETEC ALBERT EINSTEIN
+    </footer>
+
+    <script src="./scripts/carrossel.js"></script>
+  </body>
 </html>

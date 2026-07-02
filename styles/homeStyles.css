@@ -1,0 +1,159 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-color: var(--azul);
+  overflow: hidden;
+}
+
+.hero-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.hero-slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slide-sem-imagem {
+  width: 100%;
+  height: 100%;
+  background-color: var(--azul);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.hero-legenda {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.hero-btn-anterior,
+.hero-btn-proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--branco);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.hero-btn-anterior {
+  left: 20px;
+}
+.hero-btn-proximo {
+  right: 20px;
+}
+
+.hero-btn-anterior:hover,
+.hero-btn-proximo:hover {
+  background-color: var(--amarelo);
+  color: var(--azul);
+}
+
+.sobre-a-copa {
+  padding: var(--espacamento-secao) 0;
+  background-color: var(--branco);
+}
+
+.sobre-a-copa h2 {
+  font-size: 2.2rem;
+  color: var(--azul);
+  margin-bottom: 24px;
+}
+
+.sobre-a-copa p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 680px;
+}
+
+.sobre-numeros {
+  display: flex;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.numero-destaque {
+  text-align: center;
+}
+
+.numero-destaque span {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--verde);
+}
+
+.numero-destaque p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.proximos-jogos {
+  background-color: var(--azul);
+  padding: var(--espacamento-secao) 0;
+  text-align: center;
+}
+
+.proximos-jogos h2 {
+  font-size: 2rem;
+  color: var(--amarelo);
+  margin-bottom: 32px;
+}
+
+.lista-jogos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.jogo-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--branco);
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.jogo-card .versus {
+  color: var(--amarelo);
+  font-size: 1rem;
+}
+
+.proximos-jogos .btn {
+  margin-top: 28px;
+}
